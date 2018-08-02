@@ -1,0 +1,39 @@
+.tabs-btn {
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+
+	background-color: #f5f5f5;
+	background-image: linear-gradient(to bottom, $main-color 0%,#e9e9e9 100%);
+	border: 1px solid #efefef;
+	box-shadow: 2px 0px 2px -1px rgba(0,0,0,0.25);
+
+	@media screen and (min-width: 771px) {
+		flex-direction: row;
+	}
+
+	&__item {
+		width: 100%;
+		display: block;
+
+		border-top: 4px solid transparent;
+
+		&.active {
+			position: relative;
+
+			height: 50px;
+
+			border-top: 4px solid #fdd701;
+			background-color: white;
+		}
+	}
+
+	&__btn {
+		display: block;
+		padding: 10px 15px;
+
+		color: $black;
+		font-size: 16px;
+		text-align: center;
+	}
+}

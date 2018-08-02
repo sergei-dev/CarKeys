@@ -1,0 +1,68 @@
+.open-menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+
+  width: 32px;
+  height: 26px;
+  display: block;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  border-radius: $radius;
+
+  &:after,
+  .open-menu__decor:after,
+  .open-menu__decor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: 100%;
+    height: 6px;
+
+    background-color: $white;
+    border: 1px solid $black;
+    
+    transition: transform $anim, opacity $anim;
+  }
+
+  .open-menu__decor:after {
+    transform: translateY(-8px);
+  }
+
+  .open-menu__decor:before {
+    transform: translateY(8px);
+  }
+
+  &:active {
+    color: $brand-color;
+  }
+}
+
+.open-input:checked {
+  & ~ .page-open-menu .open-menu {
+    &:after {
+      opacity: 0;
+    }
+
+    .open-menu__decor:after {
+      transform: rotate(45deg);
+    }
+
+    .open-menu__decor:before {
+      transform: rotate(-45deg);
+    }
+
+    .open-menu__decor {
+      transform: rotate(-45deg);
+    }
+  }
+
+}

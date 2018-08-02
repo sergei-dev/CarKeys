@@ -1,0 +1,132 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-address {
+  background-image: url(../images/pic/icons.png);
+  background-position: -68px -22px;
+  width: 20px;
+  height: 24px;
+}
+.icon-basked {
+  background-image: url(../images/pic/icons.png);
+  background-position: 0px -52px;
+  width: 19px;
+  height: 24px;
+}
+.icon-catalog {
+  background-image: url(../images/pic/icons.png);
+  background-position: -66px -52px;
+  width: 18px;
+  height: 12px;
+}
+.icon-close-popup {
+  background-image: url(../images/pic/icons.png);
+  background-position: -91px -57px;
+  width: 12px;
+  height: 12px;
+}
+.icon-email-con {
+  background-image: url(../images/pic/icons.png);
+  background-position: -19px -52px;
+  width: 23px;
+  height: 16px;
+}
+.icon-email-footer {
+  background-image: url(../images/pic/icons.png);
+  background-position: -42px -52px;
+  width: 24px;
+  height: 15px;
+}
+.icon-email {
+  background-image: url(../images/pic/icons.png);
+  background-position: 0px -76px;
+  width: 18px;
+  height: 11px;
+}
+.icon-home {
+  background-image: url(../images/pic/icons.png);
+  background-position: -68px 0px;
+  width: 23px;
+  height: 22px;
+}
+.icon-mobile {
+  background-image: url(../images/pic/icons.png);
+  background-position: -91px -35px;
+  width: 12px;
+  height: 22px;
+}
+.icon-phone-footer {
+  background-image: url(../images/pic/icons.png);
+  background-position: -27px 0px;
+  width: 25px;
+  height: 24px;
+}
+.icon-phone-header {
+  background-image: url(../images/pic/icons.png);
+  background-position: -24px -27px;
+  width: 25px;
+  height: 24px;
+}
+.icon-read-more_arrow {
+  background-image: url(../images/pic/icons.png);
+  background-position: -103px -35px;
+  width: 4px;
+  height: 8px;
+}
+.icon-schedule-footer {
+  background-image: url(../images/pic/icons.png);
+  background-position: 0px -27px;
+  width: 24px;
+  height: 25px;
+}
+.icon-schedule {
+  background-image: url(../images/pic/icons.png);
+  background-position: -91px 0px;
+  width: 17px;
+  height: 18px;
+}
+.icon-search {
+  background-image: url(../images/pic/icons.png);
+  background-position: -91px -18px;
+  width: 17px;
+  height: 17px;
+}
+.icon-slider-mini_arrow-next {
+  background-image: url(../images/pic/icons.png);
+  background-position: -52px 0px;
+  width: 16px;
+  height: 32px;
+}
+.icon-social-facebook {
+  background-image: url(../images/pic/icons.png);
+  background-position: -52px -32px;
+  width: 9px;
+  height: 20px;
+}
+.icon-time {
+  background-image: url(../images/pic/icons.png);
+  background-position: 0px 0px;
+  width: 27px;
+  height: 27px;
+}
+.icon-welcome {
+  background-image: url(../images/pic/icons.png);
+  background-position: -18px -76px;
+  width: 10px;
+  height: 10px;
+}

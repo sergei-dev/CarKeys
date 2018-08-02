@@ -1,0 +1,113 @@
+.about {
+	margin-bottom: 0;
+	overflow: hidden;
+
+	font-family: $pt-sans;
+
+	&__wrap {
+		display: flex;
+	}
+
+	&__img {
+		max-width: 589px;
+		height: 313px;
+		display: none;
+
+		text-align: center;
+	}
+
+	&__container {
+		position: relative;
+
+		padding: 20px 15px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -122px;
+			left: 77px;
+			z-index: -1;
+
+			width: 785px;
+			height: 700px;
+			display: block;
+			
+			background: #f7f7f5;
+
+			transform: rotate(15deg);
+		}
+	}
+
+	&__title {
+		margin-bottom: 5px;
+
+		font-size: 26px;
+		font-weight: 700;
+		color: $dark-text;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin-bottom: 15px;
+		
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #666;
+	}
+
+	&__text-wrap {
+		height: 210px;
+		overflow: hidden;
+
+		font-weight: 400;
+
+		p {
+			font-size: 14px;
+			color: #666;
+			line-height: 24px;
+		}
+	}
+}
+
+.about .mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 6px;
+	background-color: $brand-color;
+}
+
+.about .mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail{ 
+	width: 6px;
+	background-color: #f2f0f0; 
+}
+
+.about .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, 
+.about .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: $brand-color;
+}
+
+@media screen and (min-width: 880px) {
+	.about {
+
+		&__wrap {
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		&__img {
+			display: block;
+		}
+
+		&__text {
+			max-width: 560px;
+		}
+
+		&__title {
+			font-size: 32px;
+		}
+		
+		&__container {
+			padding: 70px 20px 80px 0;
+		}
+	}
+}

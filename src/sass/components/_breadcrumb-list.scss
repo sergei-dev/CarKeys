@@ -1,0 +1,32 @@
+.breadcrumb-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 15px 0;
+
+	font-family: $pt-sans;
+
+	&__item {
+		margin-right: 6px;
+		font-size: 12px;
+
+		.fa {
+			color: #3a3a3a;
+			font-weight: 700;
+			font-size: 12px;
+		}
+
+		&--active {
+			color: #777;
+		}
+	}
+
+	&__link {
+
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+
+			outline: none;
+		}
+	}
+}

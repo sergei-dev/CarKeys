@@ -1,0 +1,10 @@
+.schedule {
+	font-size: $basic-size;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $dark-text;
+	
+	&__days {
+		font-weight: 400;
+	}
+}

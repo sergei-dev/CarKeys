@@ -1,0 +1,23 @@
+.brands-page {
+
+	&__image {
+		margin: 5px 0px;
+	}
+
+	&__content {
+		height: auto;
+	}
+
+	&__name {
+		padding-top: 4px;
+		height: auto;
+	}
+
+	&__title {
+		color: #337ab7;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

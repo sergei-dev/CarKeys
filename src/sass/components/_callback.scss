@@ -1,0 +1,30 @@
+.callback {
+
+	&__text {
+		display: block;
+
+		line-height: 24px;
+	}
+
+	&__border {
+		display: inline-block;
+		
+		font-size: $basic-size;
+		line-height: 22px;
+		color: #333;
+		
+		border-bottom: 1px dotted #333;
+
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+
+	&__tel {
+    margin-bottom: 6px;
+    
+    &:hover, &:active, &:focus {
+      color: $brand-color;
+    }
+  }
+}

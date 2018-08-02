@@ -1,0 +1,183 @@
+.slider {
+	width: 100%;
+	padding: 0 45px;
+
+	font-family: $pt-sans;
+
+	&__wrap {
+		border: 1px solid #e5e5e5;
+	}
+
+	&__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    line-height: 115px;
+
+    border: solid #e5e5e5;
+    border-width: 0 1px 0 0;
+    border-bottom-width: 3px;
+    border-bottom-color: transparent;
+    outline: none;
+
+    &:hover {
+    	border-color: #e5e5e5;
+    	border-bottom-color: #ffcc00;
+    }
+  }
+
+  &__img {
+		display: inline-block;
+		vertical-align: middle;
+
+		text-align: center;
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__cat-img {
+		height: 90px;
+
+		line-height: 90px;
+	}
+
+	&__title {
+		padding: 0 10px;
+		height: 50px;
+		overflow: hidden;
+
+		font-size: $basic-size;
+		line-height: 25px;
+		text-transform: uppercase;
+		color: #333;
+	}
+}
+
+.slider .slick-dots li button::before {
+	font-size: 40px;
+} 
+
+.slider .slick-slide img {
+	display: inline-block;
+}
+
+.slider .slick-prev {
+	position: absolute;
+	left: -46px;
+	top: 50%;
+	
+	height: 100%;
+	width: 44px;
+	padding: 0;
+
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+
+	border: none;
+	background-color: $white;
+	outline: none;
+}
+
+.slider .slick-next {
+	position: absolute;
+	top: 50%;
+	right: -46px;
+
+	padding: 0;
+	height: 100%;
+	width: 44px;
+
+	cursor: pointer;
+	font-size: 0;
+	line-height: 0;
+
+	border: none;
+	background-color: $white;
+	outline: none;
+}
+
+.slider .slick-prev::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    margin: -16px 0 0 -8px;
+    width: 16px;
+    height: 32px;
+
+    background-image: url(../images/bg/slider-mini_arrow-next.png);
+    background-size: 16px 32px;
+    opacity: 0.3;
+
+    transform: rotate(180deg);
+}
+
+.slider .slick-next::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	display: block;
+	margin: -16px 0 0 -8px;
+	width: 16px;
+	height: 32px;
+
+	background-image: url(../images/bg/slider-mini_arrow-next.png);
+	background-size: 16px 32px;
+	opacity: 0.3;
+}
+
+.slider .slick-arrow:hover {
+	background-color: #e5e5e5;
+}
+
+.slider .slick-dots li {
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+	margin: 0 2px;
+
+	line-height: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.slider-block .slick-dots li.slick-active button {
+	background-color: #1a1a1a;
+}
+
+.slider .slick-dots li button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+
+	outline: none;
+	border: none;
+	border-radius: 50%;
+}
+
+
+@media screen and (min-width: 771px) {
+	.slider {
+
+		&__category {
+			border: 0;
+		}
+	}
+}

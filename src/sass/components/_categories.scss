@@ -1,0 +1,107 @@
+.categories {
+	display: none;
+	width: 100%;
+
+	@media screen and (min-width: 771px) {
+		display: block;
+		min-width: 280px;
+		max-width: 280px;
+		width: 100%;
+}
+
+
+
+	&__list {
+		border: solid #f6d334;
+		border-width: 0 2px 2px 2px;
+	}
+
+	&__item {
+		display: block;
+
+		&:nth-child(1n+2) {
+			border-top: 1px solid #ebeae8;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 14px 20px;
+
+		color: #242424;
+		font-size: 12px;
+		text-transform: uppercase;
+
+		font-weight: 700;
+
+		background-color: transparent;
+
+		transition: background-color $anim;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 15px;
+		}
+
+		&:hover, &:active, &:focus {
+			color: #242424;
+			text-decoration: none;
+			background-color: $brand-color;
+		}
+	}
+
+
+	&__link-collapse {
+		width: 100%;
+		padding: 10px 15px 10px 15px;
+
+		text-decoration: none;
+		color: #242424;
+	}
+
+	&__icon {
+		font-size: 10px;
+	}
+
+	&__collapse-child {
+		.categories__link-collapse {
+			padding-left: 30px;
+		}
+	}
+
+	&__sub-item {
+		display: block;
+	}
+
+	&__child {
+		display: none;
+		visibility: hidden;
+	}
+
+	&--show {
+		display: block;
+
+	}
+
+}
+
+.categories__item.active-bg > a {
+	background-color: $brand-light;
+}
+
+.collapse {
+	display: none;
+	visibility: hidden;
+}
+
+.collapse-in {
+	display: block;
+	visibility: visible;
+}
+
+.active-color {
+	color: $brand-color;
+	&:hover, &:active, &:focus {
+		color: $brand-color;
+		background-color: $white;
+	}
+}

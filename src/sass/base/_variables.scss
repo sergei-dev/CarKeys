@@ -1,0 +1,50 @@
+//fonts
+$open-sans:                'Open Sans', sans-serif;
+$pt-sans: 									'PT Sans', sans-serif;
+
+//general-color
+$brand-color:   #f6d334;
+$brand-light:   #f7db5c;
+$main-color:    #FAFAFA;
+$dark-text:     #333333;
+$red: 				  #e24040;
+$white:         #ffffff;
+$black:         #000000;
+$gray: 					#eaeaea;
+$basic-size:    13px;
+
+//media
+$screen-max:    1600px;
+$screen-lg-max: 1366px;
+$screen-lg:     1200px;
+$screen-md-max: 1025px;
+$screen-md:     992px;
+$screen-sm:     768px;
+$screen-xs:     480px;
+
+//other
+$anim: .3s;
+$radius: 5px;
+
+@mixin placeholder($color, $size, $weight) {
+	&::-webkit-input-placeholder { 
+		font-size: $size;
+		font-weight: $weight; 
+	} 
+
+	&:-moz-placeholder {  
+		font-size: $size;
+		font-weight: $weight; 
+	} 
+
+	&::-moz-placeholder {  
+		font-size: $size;
+		font-weight: $weight; 
+	} 
+
+	&:-ms-input-placeholder {  
+		font-size: $size;
+		font-weight: $weight; 
+	} 
+	
+}

@@ -1,0 +1,41 @@
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $open-sans;
+  color: #423f54;
+  font-weight: 400;
+
+  background-color: $white;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container-new {
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-md-max) {
+    max-width: 1180px;
+  }
+}
+
+
+@supports(max-width: env(safe-area-inset-left)) {
+  .container-new {
+    max-width: calc(100% - env(safe-area-inset-left)*2);
+  }
+}

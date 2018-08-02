@@ -1,0 +1,157 @@
+.home-page {
+	position: relative;
+	
+	&__content {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	&__big-link {
+		position: absolute;
+    top: 0;
+
+		display: none;
+		width: 100%;
+		max-width: 122px;
+    height: 370px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1412px) {
+    	display: block;
+    }
+
+    @media screen and (min-width: 1467px) {
+			max-width: 155px;
+    }
+
+    @media screen and (min-width: 1489px) {
+			max-width: 179px;
+    }
+
+    @media screen and (min-width: 1538px) {
+			max-width: 200px;
+    }
+
+    @media screen and (min-width: 1582px) {
+			max-width: 214px;
+    }
+
+    @media screen and (min-width: 1607px) {
+    	max-width: 267px;
+    }
+
+    @media screen and (min-width: 1711px) {
+    	max-width: 315px;
+    }
+
+    @media screen and (min-width: 1809px) {
+    	max-width: 350px;
+    }
+
+    @media screen and (min-width: 1889px) {
+    	max-width: 370px;
+    }
+  }
+
+	&__link {
+		display: block;
+		height: 100%;
+	}
+
+	&__text-wrap {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+
+		display: block;
+
+		text-transform: uppercase;
+		color: #333;
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 16px;
+	}
+
+	&__left-text {
+		text-align: left;
+	}
+
+	&__right-text {
+		text-align: right;
+	}
+	
+
+	&__link-left {
+		left: 0;
+		box-shadow: inset -27px 7px 69px 14px rgba(255,255,255,1);
+	}
+
+	&__link-right {
+		right: 0;
+
+    text-align: right;
+
+    box-shadow: inset 27px 7px 69px 14px rgba(255,255,255,1);
+	}
+
+	&__img-right {
+		float: right;
+	}
+
+	&__discount {
+		position: relative;
+
+		display: inline-block;
+		padding: 0 10px 0 20px;
+    height: 37px;
+    margin: 0 0 15px;
+		
+		font-size: 23px;
+    line-height: 37px;
+    font-weight: 700;
+    color: $white;
+	}
+	
+	&__left-discount {
+		width: 105px;
+    height: 37px;
+
+    background-image: url('../images/bg/discount-box_bg.png');
+    background-size: 105px 37px;
+	}
+
+	&__right-discount {
+		width: 105px;
+		height: 37px;
+
+		background-image: url('../images/bg/discount-box_bg_r.png');
+		background-size: 105px 37px;
+	}
+
+	&__link-img {
+		position: relative;
+		z-index: -1;
+
+		text-align: center;
+	}
+
+	&__img {
+		max-width: none;
+		display: inline-block;
+		width: auto;
+		max-height: 100%;
+	}
+
+	&__text-holder {
+		padding: 0 10px;
+
+		font-size: 11px;
+		line-height: 16px;
+
+		@media screen and (min-width: 1490px) {
+			font-size: 16px;
+			padding: 0 20px;
+			line-height: 25px;
+		}
+	}
+}

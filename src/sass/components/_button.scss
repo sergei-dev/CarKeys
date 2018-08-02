@@ -1,0 +1,87 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+
+  color: $white;
+  font-size: $basic-size;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  
+  background-color: $brand-color;
+
+  transition: color, background-color .3s;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  &__icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 20px;
+   height: 20px;
+   margin-left: 24px;
+   
+   background-color: $black;
+   border-radius: 50%;
+ }
+
+ &__primary {
+  &:hover, &:focus {
+    color: $white;
+
+    border-color: #204d74;
+    background-color: #706b68;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #286090;
+  }
+}
+}
+
+
+.button-figure {
+  position: relative;
+
+  padding: 6px 13px 6px 0;
+  display: block;
+
+  color: $dark-text;
+  font-size: 11px;
+  
+  border-radius: 2px;
+  background-color: $brand-color;
+
+  transition: color, box-shadow .3s;
+
+  &:hover, &:active, &:focus {
+    color: $black;
+    
+    outline: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5), -23px 0px 9px -11px rgba(0,0,0,0.5), -8px 0px 10px -4px rgba(0,0,0,0.5);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 2%;
+  
+    height: 0;
+    width: 0;
+    display: block;
+    margin-top: 0px;
+    
+    border: solid transparent;
+    border-color: rgba(253, 215, 1, 0);
+    border-right-color: #fdd701;
+    border-width: 12px;
+
+    pointer-events: none;
+  }
+}

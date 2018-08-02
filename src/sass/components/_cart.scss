@@ -1,0 +1,59 @@
+.cart {
+	position: relative;
+
+	width: 52px;
+	height: 52px;
+	margin: 12px 0 0;
+	padding: 0;
+
+	line-height: 52px;
+	text-align: center;
+	cursor: pointer;
+
+	border-radius: 50%;
+	background: $brand-color;
+
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: lighten($brand-color, 15%);
+	}
+	
+	&__counter {
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		width: 18px;
+		height: 18px;
+		display: block;
+
+		color: $white;
+		font-size: 10px;
+		line-height: 18px;
+		text-align: center;
+		
+		border-radius: 50%;
+		background: #f63434;
+	}
+}
+
+.modal-content a {
+	color: #337ab7;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover,
+.cart button.btn,
+footer,
+.btn-primary,
+ul.pagination li.active a {
+background-color: #f3cf02;
+  border-color: transparent;
+  color: #195a78;
+}
+
+.cart button.btn {
+	color: $white;
+}

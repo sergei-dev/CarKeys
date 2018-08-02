@@ -1,0 +1,129 @@
+.contacts {
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 991px) {
+			margin-left: -15px;
+			flex-direction: row;
+		}
+	}
+
+	&__block {
+		width: 100%;
+	}
+
+	&__inputs {
+		flex-wrap: wrap;
+	}
+
+	&__group {
+		flex-basis: 100%;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	&__form {
+		padding-top: 0;
+		background-color: transparent;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+
+		font-size: 15px;
+	}
+
+	&__btn {
+		width: 100%;
+		display: block;
+		padding: 6px 12px;
+
+		text-align: center;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 23px;
+		
+		border: 2px solid transparent;
+		border-radius: 4px;
+
+		&:active {
+			border-top-color: $black;
+		}
+
+		&:hover, &:focus {
+			background-color: #e2c10a;
+		}
+	}
+
+	&__list {
+		padding: 10px 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+
+	&__wrap-icon {
+		width: 20px;
+		margin-right: 35px;
+
+		text-align: center;
+	}
+
+	&__info-text {
+		font-size: 16px;
+	}
+
+	&__schedule {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	&__head {
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	&__map {
+		width: 100%;
+		height: 526px;
+
+		border: none;
+	}
+
+	@media screen and (min-width: 991px) {
+		&__inputs {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		&__info-holder {
+			width: 33.33333333%;
+		}
+
+		&__block-form {
+			width: 66.66666667%;
+		}
+		
+		&__group {
+			padding: 0 15px;
+			flex-basis: 33.33333333%;
+		}
+
+		&__text {
+			flex-basis: 100%;
+		}
+
+		&__block {
+			padding: 0 15px;
+		}
+	}
+
+}

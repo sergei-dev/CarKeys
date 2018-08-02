@@ -1,0 +1,109 @@
+.product-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 35px 0;
+	min-height: 400px;
+
+	text-align: center;
+
+	&__name, &__article {
+		overflow: hidden;
+
+		line-height: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $dark-text;
+	}
+
+	&__name {
+		display: block;
+		height: 50px;
+		margin-bottom: 15px;
+
+		font-size: $basic-size;
+		font-weight: 700;
+	}
+
+	&__article {
+		height: 32px;
+
+		font-size: 14px;
+	}
+
+	&__title {
+		margin-right: 5px;
+
+		color: #999;
+		font-size: $basic-size;
+	}
+
+	&__img {
+		position: relative;
+
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		height: 125px;
+	}
+
+	&__icon {
+		position: absolute;
+		left: 47px;
+	}
+
+	&__stock {
+		display: block;
+		height: 26px;
+		width: 71px;
+		margin-bottom: 5px;
+		padding-right: 12px;
+
+		color: $white;
+		font-weight: 700;
+		line-height: 26px;
+		text-transform: uppercase;
+		font-size: 11px;
+
+		background-image: url('../images/bg/stok-icon_bg.png');
+		background-size: 71px 26px;
+	}
+
+	&__price {
+		margin-bottom: 20px;
+		height: 44px;
+
+		line-height: 44px;
+	}
+
+	&__topical {
+		display: block;
+
+		font-weight: 700;
+		font-size: 16px;
+		color: $red;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+		padding: 0 10px 0 40px;
+
+		color: $dark-text;
+		line-height: 36px;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		border-radius: 36px;
+
+		&:hover, &:focus, &:active {
+			background-color: lighten($brand-color, 15%);
+		}
+
+		&:focus {
+			.button__icon {
+				background-color: $red;
+			}
+		}
+	}
+}
