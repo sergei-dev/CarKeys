@@ -3,9 +3,9 @@ $(document).ready(function() {
 		$('.header-page__menu').slideToggle();
 	});
 
-	$('.cart').on('click', function() {
-		$('#cartModal').fadeToggle();
-	});
+	
+	
+	
 
 	$('.header-page__calltext').colorbox({
 		iframe: true,
