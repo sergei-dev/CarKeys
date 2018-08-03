@@ -10,6 +10,22 @@
 		flex-flow: row wrap;
 	}
 
+	&--column {
+		flex-direction: column;
+
+		.product-list__item {
+			width: 100%;
+		}
+	}
+
+		&--row {
+		flex-direction: row;
+
+		.product-list__item {
+			width: 25%;
+		}
+	}
+
 	&__item {
 		position: relative;
 

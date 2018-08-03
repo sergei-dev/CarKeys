@@ -100,14 +100,15 @@
         <!-- /.header-page__callwrap -->
       </div>
       <!-- /.header-page__callback -->
-      <div class="cart" data-toggle="modal" data-target="#cartModal">
-        <button class="cart__btn">
+      <div class="cart">
+        <button id="cart-btn" class="cart__btn" data-toggle="modal" data-target="#cartModal">
           <span class="visually-hidden">Корзина</span>
           <i class="icon icon-basked"></i>
           <span class="cart__counter">0</span>
         </button>
   
-        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="cart__modal-wrap">
+          <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
           
           <div class="modal-dialog"> 
             <div class="modal-content"> 
@@ -116,6 +117,7 @@
                 <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
               </div> 
               <div class="modal-body"> 
+                <p class="text-center">Ничего не куплено!</p>
                 <div class="table-responsive height-cart"> 
                   <table class="table table-striped table-cart"> 
                     <tbody>
@@ -173,6 +175,8 @@
           </div> 
         </div>
   
+        </div>
+        <!-- /.cart__modal-wrap -->
       </div>
       <!-- /.header-page__cart -->
     </div>
@@ -362,12 +366,16 @@
             <div class="fullwidthbanner slider-1">
               <ul>
                 <li data-transition="random" data-slotamount="10" data-masterspeed="300">
-                  <img src="../images/bg/slide_1.png" data-fullwidthcentering="on" alt="img-slide">
+                  <a class="fullwidthbanner-link" href="#">
+                    <img src="../images/bg/slide_1.png" data-fullwidthcentering="on" alt="img-slide">
+                  </a>
                   <div class="caption lfl stl new_element_1_1" data-x="200" data-y="200" data-speed="300" data-start="300" data-easing="easeOutBack" data-endspeed="300" data-endeasing="easeOutBack">Получить скидку на изготовления ключа!!!</div>
                   <div class="caption lfl stl new_element_1_2 caption-sub" data-x="280" data-y="260" data-speed="300" data-start="300" data-easing="easeOutBack" data-endspeed="300" data-endeasing="easeOutBack">Оставьте свой email и получите 7% скидку!</div>
                 </li>
                 <li data-transition="random" data-slotamount="10" data-masterspeed="300">
-                  <img src="../images/bg/slide_2.png" data-fullwidthcentering="on" alt="img-slide">
+                  <a class="fullwidthbanner-link" href="#">
+                    <img src="../images/bg/slide_2.png" data-fullwidthcentering="on" alt="img-slide">
+                  </a>
                   <div class="caption lfl stl new_element_2_1" data-x="200" data-y="200" data-speed="300" data-start="300" data-easing="easeOutBack" data-endspeed="300" data-endeasing="easeOutBack">Получить скидку на изготовления ключа</div>
                   <div class="caption lfl stl new_element_2_2 caption-sub" data-x="280" data-y="260" data-speed="300" data-start="300" data-easing="easeOutBack" data-endspeed="300" data-endeasing="easeOutBack">Оставьте свой email и получите 7% скидку!</div>
                 </li>
@@ -1228,7 +1236,7 @@
         <h4 class="about__subtitle">Изготовление автомобильных ключей — наш профиль</h4>
         <!-- /.about__subtitle -->
         <div class="about__text-wrap">
-          <p class="about__descr">Современные автомобильные ключи требуют высокой квалификации. «Дешевый» слесарь тут не помощник. Если в автомобиле установлена система «иммобилайзер», то понадобится и соответствующий ключ. Без совпадения кода не заведется машина и не откроется замок. Для решения таких задач лучше обратиться в сертифицированную мастерскую, где изготовят автомобильные ключи. Такие изделия не выполнить в результате обычных механических операций. Они требуют программирования, что дает возможность бороться с угонами во всем мире. Еще недавно потеря такого ключа выливалась в немалые затраты как времени, так и денег, потому что его можно было заполучить лишь у официального продавца. Ожидание могло растянуться на месяцы и обойтись в не одну сотню гривен. Изготовление автомобильных ключей нашими мастерами осуществляется быстро и Современные автомобильные ключи требуют высокой квалификации. «Дешевый» слесарь тут не помощник. Если в автомобиле установлена система «иммобилайзер», то понадобится и соответствующий ключ. Без совпадения кода не заведется машина и не откроется замок. Для решения таких задач лучше обратиться в сертифицированную мастерскую, где изготовят автомобильные ключи. Такие изделия не выполнить в результате обычных механических операций. Они требуют программирования, что дает возможность бороться с угонами во всем мире. Еще недавно потеря такого ключа выливалась в немалые затраты как времени, так и денег, потому что его можно было заполучить лишь у официального продавца. Ожидание могло растянуться на месяцы и обойтись в не одну сотню гривен. Изготовление автомобильных ключей нашими мастерами осуществляется быстро и</p>
+          <p>Современные автомобильные ключи требуют высокой квалификации. «Дешевый» слесарь тут не помощник. Если в автомобиле установлена система «иммобилайзер», то понадобится и соответствующий ключ. Без совпадения кода не заведется машина и не откроется замок. Для решения таких задач лучше обратиться в сертифицированную мастерскую, где изготовят автомобильные ключи. Такие изделия не выполнить в результате обычных механических операций. Они требуют программирования, что дает возможность бороться с угонами во всем мире. Еще недавно потеря такого ключа выливалась в немалые затраты как времени, так и денег, потому что его можно было заполучить лишь у официального продавца. Ожидание могло растянуться на месяцы и обойтись в не одну сотню гривен. Изготовление автомобильных ключей нашими мастерами осуществляется быстро и Современные автомобильные ключи требуют высокой квалификации. «Дешевый» слесарь тут не помощник. Если в автомобиле установлена система «иммобилайзер», то понадобится и соответствующий ключ. Без совпадения кода не заведется машина и не откроется замок. Для решения таких задач лучше обратиться в сертифицированную мастерскую, где изготовят автомобильные ключи. Такие изделия не выполнить в результате обычных механических операций. Они требуют программирования, что дает возможность бороться с угонами во всем мире. Еще недавно потеря такого ключа выливалась в немалые затраты как времени, так и денег, потому что его можно было заполучить лишь у официального продавца. Ожидание могло растянуться на месяцы и обойтись в не одну сотню гривен. Изготовление автомобильных ключей нашими мастерами осуществляется быстро и</p>
         <!-- /.about__descr -->
         </div>
         <!-- /.about__text-wrap -->

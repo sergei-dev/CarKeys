@@ -19,6 +19,8 @@ $(document).ready(function() {
 	});
 
 
+	
+
 
 	$('.tabs-btn__btn').click(function (e) {
 		e.preventDefault()

@@ -1,22 +1,25 @@
 .cart {
-	position: relative;
 
-	width: 52px;
-	height: 52px;
-	margin: 12px 0 0;
-	padding: 0;
+	&__btn {
+		position: relative;
 
-	line-height: 52px;
-	text-align: center;
-	cursor: pointer;
+		width: 52px;
+		height: 52px;
+		margin: 12px 0 0;
+		padding: 0;
 
-	border-radius: 50%;
-	background: $brand-color;
+		line-height: 52px;
+		text-align: center;
+		cursor: pointer;
 
-	transition: background-color .3s;
+		border-radius: 50%;
+		background: $brand-color;
 
-	&:hover {
-		background-color: lighten($brand-color, 15%);
+		transition: background-color .3s;
+
+		&:hover {
+			background-color: lighten($brand-color, 15%);
+		}
 	}
 	
 	&__counter {
@@ -66,4 +69,8 @@ ul.pagination li.active a {
 
 .cart .modal-content {
 	text-align: left;
+}
+
+.cart table.table.total tbody tr td {
+	padding: 4px;
 }

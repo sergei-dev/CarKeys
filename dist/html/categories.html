@@ -100,14 +100,15 @@
         <!-- /.header-page__callwrap -->
       </div>
       <!-- /.header-page__callback -->
-      <div class="cart" data-toggle="modal" data-target="#cartModal">
-        <button class="cart__btn">
+      <div class="cart">
+        <button id="cart-btn" class="cart__btn" data-toggle="modal" data-target="#cartModal">
           <span class="visually-hidden">Корзина</span>
           <i class="icon icon-basked"></i>
           <span class="cart__counter">0</span>
         </button>
   
-        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="cart__modal-wrap">
+          <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
           
           <div class="modal-dialog"> 
             <div class="modal-content"> 
@@ -116,6 +117,7 @@
                 <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
               </div> 
               <div class="modal-body"> 
+                <p class="text-center">Ничего не куплено!</p>
                 <div class="table-responsive height-cart"> 
                   <table class="table table-striped table-cart"> 
                     <tbody>
@@ -173,6 +175,8 @@
           </div> 
         </div>
   
+        </div>
+        <!-- /.cart__modal-wrap -->
       </div>
       <!-- /.header-page__cart -->
     </div>
@@ -371,6 +375,7 @@
             </li>
             <!-- /.breadcrumb-list__item -->
             <li class="breadcrumb-list__item active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
               <span itemprop="title">СНЯТО С ПРОИЗВОДСТВА</span>
             </li>
           </ul>
@@ -427,7 +432,7 @@
             <!-- /.li product-filter__group -->
           </ul>
           <!-- /.product-filter -->
-          <ul class="product-list">
+          <ul class="product-list product-list--column">
             <li class="product-list__item">
               <div class="product-list__content">
                 <a href="#" class="product-list__link">
