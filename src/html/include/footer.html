@@ -70,7 +70,7 @@
 								<div class="callback__wrap page-footer__callwrap">
 									<a href="tel:+38(093)4077070" class="callback__tel page-footer__tel">+38(093) 407 70 70</a>
 									<!-- /.header-page__tel -->
-									<a href="#" class="callback__text page-footer__calltext">
+									<a href="#" class="call-me callback__text page-footer__calltext">
 										<span class="callback__border">Заказать обратный звонок</span>
 									</a>
 								</div>
@@ -163,3 +163,39 @@
 	<!-- /.page-footer__bottom -->
 </footer>
 <!-- /.page-footer -->
+
+<div class="page-modal">
+	<div class="page-modal__overlay"></div>
+	<!-- /.page-modal__overlay -->
+	<div class="page-modal__content">
+		<button class="page-modal__close">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+		<h3 class="page-modal__title">Обратный звонок</h3>
+		<!-- /.page-modal__title -->
+		<h4 class="page-modal__subtitle">
+			Оставьте ваши контактные данные и наш менеджер с вами свяжется
+		</h4>
+		<!-- /.page-modal__subtitle -->
+		<form class="page-modal__form">
+			<p class="page-modal__group">
+				<label for="modal-name" class="page-modal__label">Ваше имя:</label>
+				<input id="modal-name" type="text" class="page-modal__inp"></p>
+			<!-- /.page-modal__group -->
+			<p class="page-modal__group">
+				<label for="modal-tel" class="page-modal__label">Телефон:</label>
+				<input id="modal-tel" type="text" class="page-modal__inp">
+			</p>
+			<!-- /.page-modal__group -->
+			<button type="submit" class="button page-modal__btn">
+				Перезвонить мне
+				<span class="button__icon page-modal__icon">
+					<i class="icon icon-read-more_arrow"></i>
+				</span>
+			</button>
+		</form>
+		<!-- /.page-modal__form -->
+	</div>
+	<!-- /.page-modal__content -->
+</div>
+<!-- /.page-modal -->

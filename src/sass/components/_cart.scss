@@ -49,11 +49,21 @@
 footer,
 .btn-primary,
 ul.pagination li.active a {
-background-color: #f3cf02;
-  border-color: transparent;
-  color: #195a78;
+	background-color: #f3cf02;
+	border-color: transparent;
+	color: #195a78;
+}
+
+.cart table.table.total tbody tr td.text-left {
+	width: 153px;
+	padding-left: 8px;
+	text-align: center;
 }
 
 .cart button.btn {
 	color: $white;
+}
+
+.cart .modal-content {
+	text-align: left;
 }

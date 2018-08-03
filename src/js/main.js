@@ -4,16 +4,21 @@ $(document).ready(function() {
 	});
 
 	
-	
-	
 
-	$('.header-page__calltext').colorbox({
-		iframe: true,
-		width: 300,
-		height: 445
+	$('.call-me').on('click', function(e) {
+		event.preventDefault();
+		$('.page-modal').fadeIn();
 	});
 
-	
+	$('.page-modal__close').on('click', function() {
+		$('.page-modal').fadeOut();
+	});
+
+	$('.page-modal__overlay').on('click', function() {
+		$('.page-modal').fadeOut();
+	});
+
+
 
 	$('.tabs-btn__btn').click(function (e) {
 		e.preventDefault()

@@ -52,19 +52,21 @@
 
 	&__link-collapse {
 		width: 100%;
-		padding: 10px 15px 10px 15px;
+		padding: 10px 15px 10px 24px;
 
 		text-decoration: none;
 		color: #242424;
 	}
 
 	&__icon {
+		padding-right: 8px;
+
 		font-size: 10px;
 	}
 
 	&__collapse-child {
 		.categories__link-collapse {
-			padding-left: 30px;
+			padding-left: 44px;
 		}
 	}
 

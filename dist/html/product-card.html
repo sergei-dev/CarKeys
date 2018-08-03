@@ -93,7 +93,7 @@
         <div class="callback__wrap header-page__callwrap">
           <a href="tel:+38(093)4077070" class="callback__tel header-page__tel">+38(093) 407 70 70</a>
           <!-- /.header-page__tel -->
-          <a href="#" class="callback__text header-page__calltext">
+          <a href="#" class="call-me callback__text header-page__calltext">
             <span class="callback__border">Заказать обратный звонок</span>
           </a>
         </div>
@@ -107,12 +107,12 @@
           <span class="cart__counter">0</span>
         </button>
   
-        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="false">
+        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
           
           <div class="modal-dialog"> 
             <div class="modal-content"> 
               <div class="modal-header"> 
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false">×</button> 
                 <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
               </div> 
               <div class="modal-body"> 
@@ -137,26 +137,6 @@
                           <a><i class="fa fa-plus"></i></a>
                         </td> 
                         <td class="text-right">223 грн</td> 
-                        <td class="text-center">
-                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
-                          </a> 
-                        </td> 
-                      </tr> 
-                      <tr> 
-                        <td class="text-center"> </td>
-                        <td class="text-left">
-                          <a href="#">Интерфейс USB INTERFACE 7i</a> 
-                          <div> 
-                          </div> 
-                        </td> 
-                        <td class="quantity"> 
-                          <a><i class="fa fa-minus"></i>
-                          </a> 
-                          <span style="vertical-align:top;">x&nbsp;1</span> 
-                          <a><i class="fa fa-plus"></i>
-                          </a> 
-                        </td> 
-                        <td class="text-right">6 176 грн</td> 
                         <td class="text-center">
                           <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
                           </a> 
@@ -659,7 +639,7 @@
   								<div class="callback__wrap page-footer__callwrap">
   									<a href="tel:+38(093)4077070" class="callback__tel page-footer__tel">+38(093) 407 70 70</a>
   									<!-- /.header-page__tel -->
-  									<a href="#" class="callback__text page-footer__calltext">
+  									<a href="#" class="call-me callback__text page-footer__calltext">
   										<span class="callback__border">Заказать обратный звонок</span>
   									</a>
   								</div>
@@ -752,6 +732,42 @@
   	<!-- /.page-footer__bottom -->
   </footer>
   <!-- /.page-footer -->
+  
+  <div class="page-modal">
+  	<div class="page-modal__overlay"></div>
+  	<!-- /.page-modal__overlay -->
+  	<div class="page-modal__content">
+  		<button class="page-modal__close">
+  			<span class="visually-hidden">Закрыть</span>
+  		</button>
+  		<h3 class="page-modal__title">Обратный звонок</h3>
+  		<!-- /.page-modal__title -->
+  		<h4 class="page-modal__subtitle">
+  			Оставьте ваши контактные данные и наш менеджер с вами свяжется
+  		</h4>
+  		<!-- /.page-modal__subtitle -->
+  		<form class="page-modal__form">
+  			<p class="page-modal__group">
+  				<label for="modal-name" class="page-modal__label">Ваше имя:</label>
+  				<input id="modal-name" type="text" class="page-modal__inp"></p>
+  			<!-- /.page-modal__group -->
+  			<p class="page-modal__group">
+  				<label for="modal-tel" class="page-modal__label">Телефон:</label>
+  				<input id="modal-tel" type="text" class="page-modal__inp">
+  			</p>
+  			<!-- /.page-modal__group -->
+  			<button type="submit" class="button page-modal__btn">
+  				Перезвонить мне
+  				<span class="button__icon page-modal__icon">
+  					<i class="icon icon-read-more_arrow"></i>
+  				</span>
+  			</button>
+  		</form>
+  		<!-- /.page-modal__form -->
+  	</div>
+  	<!-- /.page-modal__content -->
+  </div>
+  <!-- /.page-modal -->
 <script src="../js/build.js"></script>
 <script src="../libs/bootstrap/bootstrap.min.js"></script>
 </body>
