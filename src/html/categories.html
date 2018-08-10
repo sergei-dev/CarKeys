@@ -152,12 +152,12 @@
             <li class="product-filter__group product-filter__buttons">
               <h4 class="product-filter__title">Вид:</h4>
               <!-- /.product-filter__title -->
-              <button class="product-filter__btn">
+              <button id="list-view" class="product-filter__btn">
                 <span class="visually-hidden">Список</span>
                 <i class="fa fa-th-list"></i>
               </button>
               <!-- product-filter__btn -->
-              <button class="product-filter__btn">
+              <button id="grid-view" class="product-filter__btn">
                 <span class="visually-hidden">Сетка</span>
                 <i class="fa fa-th"></i>
               </button>
@@ -200,364 +200,747 @@
             <!-- /.li product-filter__group -->
           </ul>
           <!-- /.product-filter -->
-          <ul class="product-list product-list--column">
+          <ul class="product-list">
             <li class="product-list__item">
               <div class="product-list__content">
-                <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
                 <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
                 </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
+                <!-- /.product-list__top -->
                 <div class="product-list__article-wrap">
                   <span class="product-list__article-name">Артикул: </span>
                   <a href="#" class="product-list__article-val"> SMK-00007</a>
                 </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
                 <div class="product-list__bottom">
                   <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
                 </div>
                 <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
               </div>
               <!-- /.product-list__content -->
             </li>
             <!-- /.product-list__item -->
-            <li class="product-list__item">
+          <li class="product-list__item">
               <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
                 <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                  <h3 class="product-list__full-title" href="#">AN043 Immobilizer Data Configuration Instrument Cluster (Audi, VW, Seat, Skoda, Bentley)</h3>
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
                 </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-           <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
+                <!-- /.product-list__top -->
                 <div class="product-list__article-wrap">
                   <span class="product-list__article-name">Артикул: </span>
                   <a href="#" class="product-list__article-val"> SMK-00007</a>
                 </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
                 <div class="product-list__bottom">
                   <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
                 </div>
                 <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
               </div>
               <!-- /.product-list__content -->
             </li>
             <!-- /.product-list__item -->
             <li class="product-list__item">
               <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
                 <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
                 </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
+                <!-- /.product-list__top -->
                 <div class="product-list__article-wrap">
                   <span class="product-list__article-name">Артикул: </span>
                   <a href="#" class="product-list__article-val"> SMK-00007</a>
                 </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
                 <div class="product-list__bottom">
                   <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
                 </div>
                 <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
               </div>
               <!-- /.product-list__content -->
             </li>
             <!-- /.product-list__item -->
             <li class="product-list__item">
               <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
                 <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
                 </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
+                <!-- /.product-list__top -->
                 <div class="product-list__article-wrap">
                   <span class="product-list__article-name">Артикул: </span>
                   <a href="#" class="product-list__article-val"> SMK-00007</a>
                 </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
                 <div class="product-list__bottom">
                   <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
                 </div>
                 <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
               </div>
               <!-- /.product-list__content -->
             </li>
             <!-- /.product-list__item -->
             <li class="product-list__item">
               <div class="product-list__content">
-                <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
                 <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
                 </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-               <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
-                 <div class="product-list__article-wrap">
-                  <span class="product-list__article-name">Артикул: </span>
-                  <a href="#" class="product-list__article-val"> SMK-00007</a>
-                </div>
-                <div class="product-list__bottom">
-                  <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
-                </div>
-                <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
-                </div>
-                <!-- /.product-list__info-bottom -->
-              </div>
-              <!-- /.product-list__content -->
-            </li>
-            <!-- /.product-list__item -->
-            <li class="product-list__item">
-              <div class="product-list__content">
-                 <a href="#" class="product-list__link">
-                  <div class="product-list__image">
-                  <img src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
-                </div>
-                <!-- /.product-list__image -->
-                <div class="product-list__name">
-                  <h3 class="product-list__title">AN043 - AN022</h3>
-                </div>
-                <!-- /.product-list__name -->
-                </a>
-                <!-- /.product-list__link -->
+                <!-- /.product-list__top -->
                 <div class="product-list__article-wrap">
                   <span class="product-list__article-name">Артикул: </span>
                   <a href="#" class="product-list__article-val"> SMK-00007</a>
                 </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
                 <div class="product-list__bottom">
                   <span class="product-list__price">0 грн</span>
-                  <a href="#" class="button button-figure">Подробнее</a>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
                 </div>
                 <!-- /.product-list__bottom -->
-                <div class="product-list__info-bottom">
-                  <a href="#" class="button button-figure product-list__btn">Купить</a>
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
                 </div>
-                <!-- /.product-list__info-bottom -->
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
+              </div>
+              <!-- /.product-list__content -->
+            </li>
+            <!-- /.product-list__item -->
+            <li class="product-list__item">
+              <div class="product-list__content">
+                <div class="product-list__thumb">
+                  <a class="product-list__link" href="#">
+                    <img class="product-list__img" src="../images/bg/3be91498978f11e69bc72c56dc3e3f5c_b141ac42afd411e69bd49c5c8e7840ea-160x160_0.jpg" alt="product">
+                  </a>
+                </div>
+                <!-- /.product-list__image -->
+                <div class="product-list__wrap">
+                 <div class="product-list__top">
+                  <div class="product-list__name">
+                    <a href="#" class="product-list__title">AN043 - AN022</a>
+                  </div>
+                  <!-- /.product-list__name -->
+                  <ul class="rating product-list__rating">
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                    <li class="rating__item no-active">
+                      <i class="fa fa-star"></i>
+                    </li>
+                    <!-- /.rating__item -->
+                  </ul>
+                </div>
+                <!-- /.product-list__top -->
+                <div class="product-list__article-wrap">
+                  <span class="product-list__article-name">Артикул: </span>
+                  <a href="#" class="product-list__article-val"> SMK-00007</a>
+                </div>
+                <div class="product-list__descr">        
+                  Микросхема PCF 7943 используется в автомобильных ключах. 
+                  Отдельно микросхема не поставляется...              
+                </div>
+                <!-- /.product-list__descr -->
+                <div class="product-list__bottom">
+                  <span class="product-list__price">0 грн</span>
+                  <a href="#" class="button button-figure product-list__btn-fig">Подробнее</a>
+                  <div class="product-list__info-bottom">
+                    <a href="#" class="button button-figure product-list__btn">Купить</a>
+                  </div>
+                  <!-- /.product-list__info-bottom -->
+                </div>
+                <!-- /.product-list__bottom -->
+              </div>
+                <!-- /.product-list__wrap -->
               </div>
               <!-- /.product-list__content -->
             </li>

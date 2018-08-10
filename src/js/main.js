@@ -18,6 +18,17 @@ $(document).ready(function() {
 		$('.page-modal').fadeOut();
 	});
 
+	if( window.matchMedia("(min-width: 771px)").matches) {
+		$('#list-view').on('click', function() {
+			$('.product-list').addClass('product-list--column');
+		});
+
+		$('#grid-view').on('click', function() {
+			$('.product-list').removeClass('product-list--column');
+		});
+	}
+
+
 
 	
 
@@ -196,12 +207,13 @@ $("#min-inp").change(function(){
 	});
 
 	$('.product__slider-bottom').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-				dots: true,
-				arrows: false
-    });
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		swipeToSlide: true,
+		infinite: false,
+		dots: true,
+		arrows: false
+	});
 
 	$('.colorbox').colorbox({
 		overlayClose: true,

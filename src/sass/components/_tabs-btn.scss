@@ -26,6 +26,15 @@
 			border-top: 4px solid #fdd701;
 			background-color: white;
 		}
+
+		@media screen and (min-width: 771px) {
+			border-right: 1px solid #e5e5e5;
+			
+			&:last-child {
+				border-right: 0;
+			}
+
+		}
 	}
 
 	&__btn {
