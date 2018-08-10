@@ -46,11 +46,6 @@
 		margin: auto;
 	}
 
-	&__special {
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
 
 	&__item {
 		width: 100%;
@@ -193,6 +188,12 @@
 		text-align: center;
 	}
 
+	 .corner-0 {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
 
 	@media screen and (min-width: 771px) {
 		&__top-order {
@@ -237,9 +238,10 @@
 			width: 58.33333333%;
 		}
 
-		&__special {
+		.corner-0 {
 			top: -15px;
 			left: -20px;
 		}
 	}
+
 }
