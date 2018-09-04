@@ -54,7 +54,7 @@
 	}
 
 	.noUi-value {
-		color: #195a78;
+		color: $black;
 	}
 
 	.ocfilter-option .option-name {
@@ -112,4 +112,45 @@
 
 	}
 
+
+}
+
+.content {
+	.navbar-default {
+		background-color: transparent;
+		border: 0;
+	}
+
+	.navbar-header {
+		background-color: $brand-color;
+	}
+
+	.navbar-brand {
+		color: $white;
+	}
+
+	.navbar-toggle {
+		color: $white;
+		
+		border: 0;
+
+		&:hover, &:focus, &:active {
+			background-color: darken($brand-color, 15%);
+		}
+	}
+
+	.ocfilter-option-popover {
+		top: 135px!important;
+		left: 50%!important;
+		transform: translateX(-50%);
+	}
+}
+.panel-default .collapse {
+	visibility: visible;
+}
+
+
+input[type=checkbox], input[type=radio] {
+	margin: 0;
+	vertical-align: middle;
 }

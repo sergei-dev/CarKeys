@@ -74,5 +74,9 @@
 		border-radius: 0;
 
 		font-size: 11px;
+
+		@media screen and (max-width: 771px) {
+			max-width: none;
+		}
 	}
 }
