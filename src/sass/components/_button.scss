@@ -85,3 +85,12 @@
     pointer-events: none;
   }
 }
+
+.btn {
+  color: $white;
+}
+
+.btn-info {
+  background-color: $brand-color;
+  border: 0;
+}

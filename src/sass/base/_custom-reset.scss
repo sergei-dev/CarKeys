@@ -20,7 +20,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-p,
 dd,
 dl,
 figure,
@@ -91,10 +90,7 @@ abbr {
   text-decoration: none;
 }
 
-b,
-strong {
-  font-weight: inherit;
-}
+
 
 i,
 em {
@@ -155,7 +151,6 @@ textarea {
   line-height: inherit;
   letter-spacing: inherit;
   font-weight: inherit;
-  -webkit-appearance: none;
 }
 
 button,
@@ -164,9 +159,7 @@ select {
   text-align: left;
 }
 
-select {
-  appearance: none;
-}
+
 
 select::-ms-expand {
   display: none;

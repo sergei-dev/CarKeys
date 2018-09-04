@@ -4467,7 +4467,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent; }
 
-p,
 dd,
 dl,
 figure,
@@ -4525,10 +4524,6 @@ abbr {
   border: none;
   text-decoration: none; }
 
-b,
-strong {
-  font-weight: inherit; }
-
 i,
 em {
   font-style: inherit; }
@@ -4582,18 +4577,12 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  font-weight: inherit;
-  -webkit-appearance: none; }
+  font-weight: inherit; }
 
 button,
 select {
   text-transform: none;
   text-align: left; }
-
-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
 
 select::-ms-expand {
   display: none; }
@@ -5199,6 +5188,8 @@ body {
             box-shadow: inset 0px 0px 39px -10px #f6d334; }
   .search__group {
     position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
     overflow: hidden; }
   .search__btn {
     position: absolute;
@@ -5384,6 +5375,13 @@ ul.pagination li.active a {
     border-right-color: #fdd701;
     border-width: 12px;
     pointer-events: none; }
+
+.btn {
+  color: #ffffff; }
+
+.btn-info {
+  background-color: #f6d334;
+  border: 0; }
 
 .head-section {
   position: relative;
@@ -7306,6 +7304,59 @@ ul.pagination li.active a {
         -ms-flex-preferred-size: 214px;
             flex-basis: 214px; }
 
+.ocfilter {
+  margin-top: 15px; }
+
+.ocfilter .noUi-connect {
+  background-color: #f6d334; }
+
+.ocfilter .noUi-value {
+  color: #195a78; }
+
+.ocfilter .ocfilter-option .option-name {
+  font-size: 20px; }
+
+.ocfilter .option-values input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden; }
+
+.ocfilter .option-values input[type="checkbox"]:checked ~ a::before {
+  background-image: url("../images/pic/check.png");
+  background-color: #f6d334; }
+
+.ocfilter .option-values label {
+  font-size: 17px; }
+
+.ocfilter .option-values a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000; }
+  .ocfilter .option-values a::before {
+    content: '';
+    display: block;
+    min-width: 26px;
+    width: 26px;
+    height: 26px;
+    margin-right: 15px;
+    border: 1px solid #c3c3c3;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%; }
+
 .contacts__wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7750,7 +7801,9 @@ input[type="radio"].article__radiobuttons {
            -o-transform: translateY(-50%);
               transform: translateY(-50%); }
   .header-page__schedule {
-    margin-right: 5px; }
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0; }
   .header-page__email {
     display: none; }
   .header-page__link {
