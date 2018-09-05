@@ -7,6 +7,7 @@
 	width: 100%;
 	height: 100%;
 	display: none;
+	padding: 15px;
 
 	&__overlay {
 		position: absolute;
@@ -22,7 +23,7 @@
 	}
 
 	&__content {
-		position: fixed;
+		position: relative;
 		left: 50%;
 		top: 50%;
 		

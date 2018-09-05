@@ -86,8 +86,11 @@
   }
 }
 
-.btn-default {
+.btn {
   color: $white;
+}
+.btn-default {
+  background-color: #2f2f2f;
 }
 
 .btn-info {
