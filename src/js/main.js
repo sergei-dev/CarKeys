@@ -231,7 +231,7 @@ $("#min-inp").change(function(){
 	api =  $('.slider-1').revolution(
 	{
 		delay:9000,
-		startheight:483,
+		startheight:517,
 		startwidth:1170,
 		onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
 
