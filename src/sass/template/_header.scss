@@ -100,7 +100,6 @@
   &__callback {
     display: flex;
     align-items: center;
-    padding-top: 15px;
 
     text-align: center;
   }
@@ -379,4 +378,8 @@
       padding: 10px 0;
     }
   }
+}
+
+.call-me {
+  display: none;
 }
