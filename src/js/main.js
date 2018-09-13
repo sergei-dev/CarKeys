@@ -20,11 +20,11 @@ $(document).ready(function() {
 
 	if( window.matchMedia("(min-width: 771px)").matches) {
 		$('#list-view').on('click', function() {
-			$('.product-list').addClass('product-list--column');
+			$('.product-list:not(.product-list--sub-categories)').addClass('product-list--column');
 		});
 
 		$('#grid-view').on('click', function() {
-			$('.product-list').removeClass('product-list--column');
+			$('.product-list:not(.product-list--sub-categories)').removeClass('product-list--column');
 		});
 	}
 

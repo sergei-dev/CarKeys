@@ -9,16 +9,25 @@
 		width: 100%;
 	}
 
-	&--scroll {
-		height: 403px;
-		overflow-y: auto;
-	}
 
 
 
 	&__list {
 		border: solid #f6d334;
 		border-width: 0 2px 2px 2px;
+
+		&--scroll {
+
+			@media screen and(min-width: 771px) {
+				height: 350px;
+				overflow-y: auto;
+			}
+
+			@media screen and(min-width: 1024px) {
+				height: 403px;
+				overflow-y: auto;
+			}
+		}
 	}
 
 	&__item {
