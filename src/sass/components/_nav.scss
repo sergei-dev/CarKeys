@@ -2,10 +2,8 @@
 
 	&__list {
 		display: flex;
-		flex-direction: column;
-		padding: 40px 15px 0;
-
-		line-height: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	&__item {
@@ -24,26 +22,14 @@
 
 	&__link {
 		display: block;
-		padding: 10px 0;
+		padding: 5px 10px;
 
-		text-transform: uppercase;
-		font-size: 14px;
+		text-transform: initial;
+		font-size: 13px;
 		color: $white;
-		font-weight: 400;
 
-		transition: color $anim;
-
-		&:hover, &:active {
+		&:hover, &:focus, &:active {
 			color: $brand-color;
-
-			outline: none;
-		}
-
-		&:focus {
-			color: $white;
-			
-			outline: none;
-			background-color: #706b68;
 		}
 	}
 }
@@ -58,13 +44,6 @@
 			flex-direction: row;
 			padding: 0;
 		}
-
-		&__link {
-			padding: 15px 5px 15px;
-
-			text-transform: initial;
-			font-size: 12px;
-		}
 	}
 }
 
@@ -72,8 +51,6 @@
 	.nav {
 
 		&__link {
-			padding: 15px 10px 15px;
-			
 			text-transform: initial;
 		}
 	}
@@ -81,10 +58,6 @@
 
 @media screen and (min-width: 1210px) {
 	.nav {
-
-		&__list {
-			padding-left: 55px;
-		}
 
 		&__link {
 			font-size: 14px;
