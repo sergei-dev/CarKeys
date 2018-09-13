@@ -34,8 +34,9 @@ body {
 }
 
 
-@supports(max-width: env(safe-area-inset-left)) {
+/* @supports(max-width: env(safe-area-inset-left)) {
   .container-new {
     max-width: calc(100% - env(safe-area-inset-left)*2);
   }
 }
+ */

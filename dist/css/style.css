@@ -2542,6 +2542,14 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
   overflow: hidden;
   z-index: 0; }
 
+@media screen and (min-width: 771px) {
+  .fullwidthbanner {
+    height: 340px !important; } }
+
+@media screen and (min-width: 1024px) {
+  .fullwidthbanner {
+    height: 392px !important; } }
+
 #slider .fullwidth .fullwidthbanner-container {
   margin: 0px; }
 
@@ -4906,12 +4914,12 @@ body {
     .container-new {
       max-width: 1180px; } }
 
-@supports (max-width: env(safe-area-inset-left)) {
+/* @supports(max-width: env(safe-area-inset-left)) {
   .container-new {
-    max-width: -webkit-calc(100% - env(safe-area-inset-left)*2);
-    max-width: -moz-calc(100% - env(safe-area-inset-left)*2);
-    max-width: calc(100% - env(safe-area-inset-left)*2); } }
-
+    max-width: calc(100% - env(safe-area-inset-left)*2);
+  }
+}
+ */
 .open-menu {
   position: fixed;
   top: 15px;

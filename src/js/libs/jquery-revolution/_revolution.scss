@@ -297,6 +297,17 @@
 	z-index: 0;
 }
 
+.fullwidthbanner {
+
+	@media screen and(min-width: 771px) {
+		height: 340px!important;
+	}
+
+	@media screen and(min-width: 1024px) {
+		height: 392px!important;
+	}
+}
+
 	#slider .fullwidth .fullwidthbanner-container {
 		margin: 0px;
 	}
