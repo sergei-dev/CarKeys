@@ -52,7 +52,6 @@ const pathes = {
 
 const config = {
   jsBuild: [
-    `${pathes.src.js}/libs/jquery-ui/jquery-ui-1.10.3.custom.min.js`,
     `${pathes.src.js}/libs/jquery-validate/jquery-validate.min.js`,
     `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`,
     `${pathes.src.js}/libs/colorbox/jquery.colorbox-min.js`,
