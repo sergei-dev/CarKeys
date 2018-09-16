@@ -50,17 +50,17 @@ const pathes = {
   },
 };
 
-const config = {
-  jsBuild: [
-    `${pathes.src.js}/libs/jquery-validate/jquery-validate.min.js`,
-    `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`,
-    `${pathes.src.js}/libs/colorbox/jquery.colorbox-min.js`,
-    `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js`,
-    `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.js`,
-    `${pathes.src.js}/libs/jquery-revolution/jquery.themepunch.revolution.min.js`,
-    `${pathes.src.js}/libs/slick/slick.min.js`,
-    `${pathes.src.js}/main.js`,
-  ],
+const config = { 
+  jsBuild: [ 
+  `${pathes.src.js}/libs/jquery-validate/jquery-validate.min.js`, 
+  `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`, 
+  `${pathes.src.js}/libs/colorbox/jquery.colorbox-min.js`, 
+  `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js`, 
+  `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.js`, 
+  `${pathes.src.js}/libs/jquery-revolution/jquery.themepunch.revolution.min.js`, 
+  `${pathes.src.js}/libs/slick/slick.min.js`, 
+  `${pathes.src.js}/main.js`, 
+  ], 
 };
 
 function plumberFn(error) {
@@ -210,7 +210,7 @@ gulp.task('img', () =>
       imagemin({
         interlaced: true,
         progressive: true,
-        svgoPlugins: [{ removeViewBox: false }],
+        svgoPlugins: [{ removeViewBox: true }],
         use: [pngquant()],
       })
     )
@@ -258,26 +258,11 @@ gulp.task('svg-sprite-build', () =>
 );
 
 
-gulp.task('sprite', function () {
-  var spriteData = gulp.src('./src/images/sprite/*.png')
-    .pipe(spritesmith({
-      imgName: 'icons.png',
-      imgPath: '../images/pic/icons.png',
-      cssName: '_sprite.scss',
-      algorithm: 'binary-tree',
-      cssFormat: 'css'
-    }));
-    
-  spriteData.img.pipe(gulp.dest('./dist/images/pic/'));
-  spriteData.css.pipe(gulp.dest('./src/sass/base/'));
-});
-
-
 
 gulp.task('build', callback => {
   runSequence(
     'clean',
-    ['copy', 'html', 'js', 'svg-sprite-build', 'sprite', 'img'],
+    ['copy', 'html', 'js', 'svg-sprite-build', 'img'],
     'css-min-style',
     callback
   );
